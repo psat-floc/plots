@@ -1,12 +1,14 @@
-# set terminal cairolatex pdf
-# set output "figures/results/uniq_sort_simple.tex"
+set terminal cairolatex pdf
+set output "figures/results/uniq_sort_simple.tex"
 
-set terminal png
-set output "img.png"
+# set terminal png
+# set output "img.png"
 
 set grid
+set mxtics 5
+set mytics 5
 
-set xlabel "Number of cohorts in the path"
+set xlabel "Years count"
 set ylabel "Uniqueness (\\%)"
 
 set key top left
