@@ -1,10 +1,10 @@
 set terminal cairolatex pdf
 set output "figures/results/diff_uniq.tex"
 
-set terminal png
-set output "img.png"
+# set terminal png
+# set output "img.png"
 
-# set yrange [0:25]
+set yrange [0:25]
 
 set grid
 set mxtics 5
