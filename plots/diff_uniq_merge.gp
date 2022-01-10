@@ -1,5 +1,5 @@
 set terminal cairolatex pdf
-set output "figures/results/diff_uniq.tex"
+set output "figures/results/diff_uniq_merge.tex"
 
 # set terminal png
 # set output "img.png"
