@@ -4,8 +4,6 @@ set output "figures/results/diff_uniq_sort.tex"
 # set terminal png
 # set output "img.png"
 
-set yrange [0:25]
-
 set grid
 set mxtics 5
 set mytics 5
