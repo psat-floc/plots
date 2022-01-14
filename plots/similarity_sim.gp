@@ -16,7 +16,7 @@ set mytics 5
 set xlabel "Year"
 set ylabel "Cohorts similarity (\\%)"
 
-set title "Evolution of cohorts similary through time (SimHash)"
+set title "Evolution of cohorts similarity through time (SimHash)"
 
 plot '../8_bits/global_cohort_similarity_8.csv' using 1:($2*100) with linespoints title "8 bits", \
      '../12_bits/global_cohort_similarity_12.csv' using 1:($2*100) with linespoints title "12 bits", \

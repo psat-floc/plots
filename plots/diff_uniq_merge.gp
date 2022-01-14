@@ -4,8 +4,6 @@ set output "figures/results/diff_uniq_merge.tex"
 # set terminal png
 # set output "img.png"
 
-set yrange [0:25]
-
 set grid
 set mxtics 5
 set mytics 5
@@ -25,4 +23,3 @@ plot '../8_bits/all_simhash_8_plot.csv' with linespoints ls 1 lc rgb "#1E90FF" t
       '../20_bits/all_sortinglsh_20_plot.csv' with linespoints ls 1 lc rgb "#FF1493" title "20 bits SortingLSH", \
       '../20_bits/all_sortinglsh_20_fingerprint_plot.csv' with linespoints ls 4 lc rgb "#FF1493" title "20 bits FP SortingLSH"
 
-unset yrange
