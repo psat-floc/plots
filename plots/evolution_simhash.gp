@@ -7,24 +7,16 @@ set output "figures/results/evolution_sim.tex"
 set datafile separator ","
 
 set grid ztics xtics ytics
-set xtics (8,12,16,20)
 
+set xlabel "Years"
+set ylabel "Evolution (\\%)"
+set yrange [70: 100]
 
+set key bottom right
+set title "Evolution of cohorts (SimHash, 20 bits)"
 
-set xlabel "Nb. of bits"
-set ylabel "Years"
-set zlabel "Evolution (\\%)"
-set ylabel offset 3.2,-1.2
-set zlabel offset 3.8,6.8
+plot '../20_bits/all_simhash_20_fingerprint_evolution_plot.csv' using (1995 + column(0)):1 w lp title "People staying in the same cohort", \
+      '../20_bits/all_simhash_20_fingerprint_evolution_plot.csv' using (1995 + column(0)):2 w lp title "People staying in the same cohort or joining one"
 
-set key top left
-set title "Evolution of cohorts (SimHash)"
-
-splot '../8_bits/all_simhash_8_fingerprint_evolution_plot.csv' using (8):(1995 + column(0)):2 w lp title "8 bits", \
-      '../12_bits/all_simhash_12_fingerprint_evolution_plot.csv' using (12):(1995 + column(0)):2 w lp title "12 bits", \
-      '../16_bits/all_simhash_16_fingerprint_evolution_plot.csv' using (16):(1995 + column(0)):2 w lp title "16 bits", \
-      '../20_bits/all_simhash_20_fingerprint_evolution_plot.csv' using (20):(1995 + column(0)):2 w lp title "20 bits"
-
-unset zlabel
 unset grid
 reset
