@@ -6,7 +6,7 @@ set output "figures/results/nb_cohorts_sort.tex"
 
 set datafile separator ","
 
-set key bottom right
+set key top left
 set grid
 set mxtics 5
 set mytics 5
